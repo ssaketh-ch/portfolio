@@ -8,17 +8,18 @@ import { TypewriterEffectSmooth } from '@/components/ui/typewriter-effect';
 
 const words = [
     {
-        text: 'Java'
+        text: 'HPC',
+        className: 'text-blue-500 dark:text-blue-500'
     },
     {
         text: 'and'
     },
     {
-        text: 'React/Next.js'
+        text: 'CUDA/C++',
+        className: 'text-blue-500 dark:text-blue-500'
     },
     {
-        text: 'developer',
-        className: 'text-blue-500 dark:text-blue-500'
+        text: 'enthusiast'
     }
 ];
 
@@ -29,17 +30,22 @@ export function LandingPage() {
             className="bg- relative flex  h-screen w-full flex-col items-center justify-center bg-white bg-dot-black/[0.2] dark:bg-black dark:bg-dot-white/[0.2]"
         >
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_50%,black)] dark:bg-black" />
-            <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  "> Hello, I&apos;m Safet. A passionate Software Engineer.</p>
+            <p className="text-xs text-neutral-600 dark:text-neutral-200 sm:text-base  "> Hi, I&apos;m Saketh. A student and passionate photgrapher! </p>
+
             <TypewriterEffectSmooth words={words} />
             <div className="z-30 flex flex-col items-center space-x-0 space-y-4 md:flex-row md:space-x-4 md:space-y-0">
-                <Link href="https://drive.google.com/file/d/1ZbmcZSCH25ZaFt68TvKl4LYRTOAyD11D/view?usp=sharing">
+                <Link href="https://drive.google.com/file/d/13aBCJKbMmXZLj2-h9MD6Ek4HdQztZ04a/view?usp=sharing">
                     <Button>Download CV</Button>
+                </Link>
+                <Link href="https://ssaketh-ch.github.io/photography-portfolio/" target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline">My Photography Page</Button>
                 </Link>
                 <Link href="#contact-me">
                     <Button variant="secondary">Contact Me</Button>
-                </Link>
+                </Link>                
             </div>
             <BackgroundBeams />
+
         </div>
     );
 }

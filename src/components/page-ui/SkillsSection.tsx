@@ -1,8 +1,7 @@
 import Link from 'next/link';
 import React from 'react';
-import { FaJava, FaReact } from 'react-icons/fa';
-import { SiPostgresql, SiSpringboot, SiTailwindcss } from 'react-icons/si';
-import { TbBrandNextjs } from 'react-icons/tb';
+import { FaJava, FaPython } from 'react-icons/fa';
+import { SiC, SiCplusplus, SiPytorch, SiNvidia } from 'react-icons/si';
 
 import { EvervaultCard, Icon } from '@/components/ui/evervault-card';
 
@@ -34,33 +33,33 @@ export function SkillsSection() {
 
 const skills = [
     {
-        title: 'React.js',
-        link: 'https://react.dev/',
-        icon: <FaReact />
+        title: 'Nvidia profilers',
+        link: 'https://developer.nvidia.com/performance-analysis-tools',
+        icon: <SiNvidia /> 
     },
     {
-        title: 'Next.js',
-        link: 'https://nextjs.org',
-        icon: <TbBrandNextjs />
+        title: 'C++',
+        link: 'https://isocpp.org/',
+        icon: <SiCplusplus />
     },
     {
-        title: 'Tailwind',
-        link: 'https://tailwindcss.com',
-        icon: <SiTailwindcss />
+        title: 'Python',
+        link: 'https://www.python.org/',
+        icon: <FaPython />
+    },
+    {
+        title: 'CUDA',
+        link: 'https://developer.nvidia.com/cuda-zone',
+        icon: <SiNvidia /> 
+    },
+    {
+        title: 'PyTorch',
+        link: 'https://pytorch.org/',
+        icon: <SiPytorch />
     },
     {
         title: 'Java',
         link: 'https://www.oracle.com/java/',
         icon: <FaJava />
-    },
-    {
-        title: 'Spring Boot',
-        link: 'https://spring.io/projects/spring-boot',
-        icon: <SiSpringboot />
-    },
-    {
-        title: 'PostgreSQL',
-        link: 'https://www.postgresql.org',
-        icon: <SiPostgresql />
     }
 ];
